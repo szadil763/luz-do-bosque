@@ -1,0 +1,30 @@
+{
+  "fonte": "src/world/atmosphere.js (SKY_KEYS), src/world/biome.js (terreno, luzes, névoa), src/systems/enemies.js, src/systems/miniboss.js, src/player/lantern.js (BIOME_POWERS)",
+  "ceu_por_hora": [
+    { "h": 0,    "top": "#050a18", "horizon": "#0e1b30", "fog": "#0b1526", "density": 0.013,  "hemiSky": "#3a4d76", "hemiGround": "#141d2d", "hemi": 0.78, "sun": 0.0,  "moon": 0.8,  "sunColor": "#a8c0ff" },
+    { "h": 4.6,  "top": "#0c1a33", "horizon": "#2b4468", "fog": "#122036", "density": 0.012,  "hemiSky": "#41578a", "hemiGround": "#151e30", "hemi": 0.82, "sun": 0.10, "moon": 0.6,  "sunColor": "#b7ccff" },
+    { "h": 6.4,  "top": "#3a6aa8", "horizon": "#ffb579", "fog": "#5a6076", "density": 0.010,  "hemiSky": "#6f8ec4", "hemiGround": "#3d4a45", "hemi": 0.96, "sun": 1.5,  "moon": 0.06, "sunColor": "#ffc48a" },
+    { "h": 9.0,  "top": "#4f93cf", "horizon": "#e6f4fb", "fog": "#a6c6d8", "density": 0.0055, "hemiSky": "#b5d6f5", "hemiGround": "#6f8048", "hemi": 1.28, "sun": 2.4,  "moon": 0.0,  "sunColor": "#fff4d6" },
+    { "h": 13.0, "top": "#4c9ede", "horizon": "#e9f7ff", "fog": "#b6d5e4", "density": 0.0048, "hemiSky": "#c8e4fb", "hemiGround": "#78874f", "hemi": 1.38, "sun": 2.7,  "moon": 0.0,  "sunColor": "#ffffff" },
+    { "h": 17.0, "top": "#4f8fc4", "horizon": "#f7d9a8", "fog": "#adc0c2", "density": 0.0062, "hemiSky": "#b3c9dd", "hemiGround": "#6b664a", "hemi": 1.14, "sun": 1.9,  "moon": 0.0,  "sunColor": "#ffdcaa" },
+    { "h": 18.8, "top": "#2f4f7f", "horizon": "#ff9c6b", "fog": "#5e5566", "density": 0.0085, "hemiSky": "#7d78a8", "hemiGround": "#2f2733", "hemi": 0.80, "sun": 0.85, "moon": 0.06, "sunColor": "#ff9a5e" },
+    { "h": 20.4, "top": "#1c2e4a", "horizon": "#6d5a80", "fog": "#22304c", "density": 0.0115, "hemiSky": "#4a5b85", "hemiGround": "#1a2334", "hemi": 0.85, "sun": 0.14, "moon": 0.5,  "sunColor": "#c9a8d8" },
+    { "h": 22.0, "top": "#070f20", "horizon": "#16263f", "fog": "#0f1a2c", "density": 0.013,  "hemiSky": "#3b4d74", "hemiGround": "#141d2d", "hemi": 0.80, "sun": 0.0,  "moon": 0.78, "sunColor": "#a8c0ff" },
+    { "h": 24,   "top": "#050a18", "horizon": "#0e1b30", "fog": "#0b1526", "density": 0.013,  "hemiSky": "#3a4d76", "hemiGround": "#141d2d", "hemi": 0.78, "sun": 0.0,  "moon": 0.8,  "sunColor": "#a8c0ff" }
+  ],
+  "hora_inicial": 17.6,
+  "duracao_do_dia_segundos": 480,
+  "terreno": {
+    "formula": "h = 0.45*sin(x*0.13)*cos(z*0.15) + 0.3*sin(x*0.27+1.1)*cos(z*0.21-0.6)",
+    "achatamento_acampamento": "h *= lerp(0.12, 1, clamp((dist(0,0)-7)/9, 0, 1))",
+    "depressao_lago": "dist(-16,9) < 7 ? h -= (1 - d/7) * 2.6 : 0",
+    "hsl": { "h": "0.325 + moss*0.05 - damp*0.05 + meadow*0.02", "s": "0.38 + moss*0.10 - damp*0.14", "l": "0.145 + moss*0.075 + damp*0.05 + meadow*0.03" }
+  },
+  "luzes_base": { "hemi": ["#8fb6dd", "#22301f", 1.0], "moon": ["#9db8f0", 0.36], "fog": ["#8fb4c9", 0.0072], "background": "#0a1126" },
+  "agua": { "deep": "#0e3348", "light": "#3f8f9e", "raio_lago": 7 },
+  "vegetacao": { "tronco": "#4a3a2b", "arvores": 170, "grama": 3800, "flores": 520 },
+  "inimigos": { "sombra": { "corpo": "#3b3560", "olhos": "#bff6ff" }, "cogumelo": { "corpo": "#c25a86", "pintas": "#ffe9f3", "olhos": "#fff6d8" }, "espirito": { "corpo": "#7fe3d8", "olhos": "#ffffff", "opacidade": 0.72 } },
+  "chefe": { "pernas": "#6b6f86", "quadril": "#7d8299", "torso": "#8f95ab", "ombros": "#787e94", "bracos": "#6f7488", "punhos": "#5f6478", "cabeca": "#9aa0b6", "olhos": "#8ef7c0", "cristal": "#7ec8ff", "aviso": "#ff8f8f" },
+  "poderes_bioma": { "floresta": "#7cf0a8", "cristal": "#7ec8ff", "deserto": "#ffd479", "pantano": "#7cf0d8", "gelo": "#dff2ff", "ruinas": "#c79bff", "sombras": "#ff9be8" },
+  "postfx": { "exposure": 1.14, "saturation": 1.16, "vignette": 0.45, "grain": 0.016, "bloom_high": 0.72, "bloom_low": 0.5, "rays": 0.9, "samples_high": 4, "samples_low": 0 }
+}

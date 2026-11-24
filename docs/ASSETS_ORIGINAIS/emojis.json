@@ -1,0 +1,967 @@
+{
+  "total_distintos": 120,
+  "total_ocorrencias": 313,
+  "itens": [
+    {
+      "emoji": "✦",
+      "count": 4,
+      "files": [
+        "index.html",
+        "src/player/lantern.js",
+        "src/ui/menus.js"
+      ]
+    },
+    {
+      "emoji": "🌙",
+      "count": 6,
+      "files": [
+        "index.html",
+        "src/avatar/catalog.js",
+        "src/ui/menus.js",
+        "src/world/atmosphere.js",
+        "src/world/questland.js"
+      ]
+    },
+    {
+      "emoji": "☰",
+      "count": 1,
+      "files": [
+        "index.html"
+      ]
+    },
+    {
+      "emoji": "🎭",
+      "count": 4,
+      "files": [
+        "index.html",
+        "src/avatar/catalog.js"
+      ]
+    },
+    {
+      "emoji": "🌿",
+      "count": 2,
+      "files": [
+        "index.html",
+        "src/world/biome.js"
+      ]
+    },
+    {
+      "emoji": "🛡",
+      "count": 4,
+      "files": [
+        "index.html",
+        "src/player/lantern.js",
+        "src/systems/loot.js"
+      ]
+    },
+    {
+      "emoji": "🔆",
+      "count": 4,
+      "files": [
+        "index.html",
+        "src/main.js",
+        "src/player/lantern.js"
+      ]
+    },
+    {
+      "emoji": "✋",
+      "count": 1,
+      "files": [
+        "index.html"
+      ]
+    },
+    {
+      "emoji": "🎩",
+      "count": 3,
+      "files": [
+        "index.html",
+        "src/player/lantern.js",
+        "src/ui/avatar-studio.js"
+      ]
+    },
+    {
+      "emoji": "🏮",
+      "count": 10,
+      "files": [
+        "index.html",
+        "src/main.js",
+        "src/systems/loot.js",
+        "src/ui/menus.js",
+        "src/world/biome.js",
+        "src/world/questland.js"
+      ]
+    },
+    {
+      "emoji": "🎮",
+      "count": 3,
+      "files": [
+        "index.html",
+        "src/ui/menus.js"
+      ]
+    },
+    {
+      "emoji": "⚙",
+      "count": 3,
+      "files": [
+        "index.html",
+        "src/ui/menus.js"
+      ]
+    },
+    {
+      "emoji": "🗑",
+      "count": 2,
+      "files": [
+        "index.html",
+        "src/ui/menus.js"
+      ]
+    },
+    {
+      "emoji": "🎒",
+      "count": 3,
+      "files": [
+        "index.html",
+        "src/avatar/catalog.js",
+        "src/ui/menus.js"
+      ]
+    },
+    {
+      "emoji": "📜",
+      "count": 7,
+      "files": [
+        "index.html",
+        "src/systems/interactables.js",
+        "src/systems/npc.js",
+        "src/ui/menus.js",
+        "src/world/biome.js",
+        "src/world/questland.js"
+      ]
+    },
+    {
+      "emoji": "🗺",
+      "count": 4,
+      "files": [
+        "index.html",
+        "src/main.js",
+        "src/systems/loot.js",
+        "src/ui/menus.js"
+      ]
+    },
+    {
+      "emoji": "💾",
+      "count": 1,
+      "files": [
+        "index.html"
+      ]
+    },
+    {
+      "emoji": "📂",
+      "count": 2,
+      "files": [
+        "index.html",
+        "src/main.js"
+      ]
+    },
+    {
+      "emoji": "🪙",
+      "count": 7,
+      "files": [
+        "index.html",
+        "src/avatar/catalog.js",
+        "src/systems/interactables.js",
+        "src/systems/loot.js",
+        "src/ui/avatar-studio.js",
+        "src/ui/menus.js"
+      ]
+    },
+    {
+      "emoji": "✕",
+      "count": 2,
+      "files": [
+        "index.html"
+      ]
+    },
+    {
+      "emoji": "🎉",
+      "count": 2,
+      "files": [
+        "index.html",
+        "src/ui/avatar-studio.js"
+      ]
+    },
+    {
+      "emoji": "✓",
+      "count": 2,
+      "files": [
+        "index.html",
+        "src/ui/avatar-studio.js"
+      ]
+    },
+    {
+      "emoji": "🧿",
+      "count": 2,
+      "files": [
+        "src/avatar/catalog.js"
+      ]
+    },
+    {
+      "emoji": "🔥",
+      "count": 5,
+      "files": [
+        "src/avatar/catalog.js",
+        "src/systems/interactables.js",
+        "src/ui/menus.js",
+        "src/world/biome.js"
+      ]
+    },
+    {
+      "emoji": "🕵",
+      "count": 2,
+      "files": [
+        "src/avatar/catalog.js"
+      ]
+    },
+    {
+      "emoji": "️",
+      "count": 18,
+      "files": [
+        "src/avatar/catalog.js",
+        "src/main.js",
+        "src/player/lantern.js",
+        "src/systems/loot.js",
+        "src/systems/miniboss.js",
+        "src/systems/npc.js",
+        "src/ui/menus.js",
+        "src/world/atmosphere.js",
+        "src/world/biome.js"
+      ]
+    },
+    {
+      "emoji": "🥷",
+      "count": 3,
+      "files": [
+        "src/avatar/catalog.js"
+      ]
+    },
+    {
+      "emoji": "🏴",
+      "count": 4,
+      "files": [
+        "src/avatar/catalog.js"
+      ]
+    },
+    {
+      "emoji": "☠",
+      "count": 4,
+      "files": [
+        "src/avatar/catalog.js"
+      ]
+    },
+    {
+      "emoji": "🧹",
+      "count": 3,
+      "files": [
+        "src/avatar/catalog.js"
+      ]
+    },
+    {
+      "emoji": "🐧",
+      "count": 2,
+      "files": [
+        "src/avatar/catalog.js",
+        "src/ui/avatar-studio.js"
+      ]
+    },
+    {
+      "emoji": "🍦",
+      "count": 1,
+      "files": [
+        "src/avatar/catalog.js"
+      ]
+    },
+    {
+      "emoji": "🐻",
+      "count": 1,
+      "files": [
+        "src/avatar/catalog.js"
+      ]
+    },
+    {
+      "emoji": "🐱",
+      "count": 1,
+      "files": [
+        "src/avatar/catalog.js"
+      ]
+    },
+    {
+      "emoji": "🐰",
+      "count": 1,
+      "files": [
+        "src/avatar/catalog.js"
+      ]
+    },
+    {
+      "emoji": "🦊",
+      "count": 1,
+      "files": [
+        "src/avatar/catalog.js"
+      ]
+    },
+    {
+      "emoji": "⭐",
+      "count": 7,
+      "files": [
+        "src/avatar/catalog.js",
+        "src/main.js",
+        "src/systems/loot.js",
+        "src/ui/menus.js"
+      ]
+    },
+    {
+      "emoji": "😊",
+      "count": 1,
+      "files": [
+        "src/avatar/catalog.js"
+      ]
+    },
+    {
+      "emoji": "😮",
+      "count": 1,
+      "files": [
+        "src/avatar/catalog.js"
+      ]
+    },
+    {
+      "emoji": "😳",
+      "count": 1,
+      "files": [
+        "src/avatar/catalog.js"
+      ]
+    },
+    {
+      "emoji": "😏",
+      "count": 1,
+      "files": [
+        "src/avatar/catalog.js"
+      ]
+    },
+    {
+      "emoji": "😴",
+      "count": 1,
+      "files": [
+        "src/avatar/catalog.js"
+      ]
+    },
+    {
+      "emoji": "🧵",
+      "count": 1,
+      "files": [
+        "src/avatar/catalog.js"
+      ]
+    },
+    {
+      "emoji": "🧥",
+      "count": 1,
+      "files": [
+        "src/avatar/catalog.js"
+      ]
+    },
+    {
+      "emoji": "👗",
+      "count": 1,
+      "files": [
+        "src/avatar/catalog.js"
+      ]
+    },
+    {
+      "emoji": "🎽",
+      "count": 1,
+      "files": [
+        "src/avatar/catalog.js"
+      ]
+    },
+    {
+      "emoji": "🥋",
+      "count": 3,
+      "files": [
+        "src/avatar/catalog.js"
+      ]
+    },
+    {
+      "emoji": "🩳",
+      "count": 1,
+      "files": [
+        "src/avatar/catalog.js"
+      ]
+    },
+    {
+      "emoji": "💇",
+      "count": 2,
+      "files": [
+        "src/avatar/catalog.js",
+        "src/ui/avatar-studio.js"
+      ]
+    },
+    {
+      "emoji": "🎀",
+      "count": 2,
+      "files": [
+        "src/avatar/catalog.js"
+      ]
+    },
+    {
+      "emoji": "💫",
+      "count": 5,
+      "files": [
+        "src/avatar/catalog.js",
+        "src/ui/menus.js",
+        "src/world/biome.js"
+      ]
+    },
+    {
+      "emoji": "🌀",
+      "count": 4,
+      "files": [
+        "src/avatar/catalog.js",
+        "src/player/lantern.js",
+        "src/systems/loot.js"
+      ]
+    },
+    {
+      "emoji": "⚡",
+      "count": 4,
+      "files": [
+        "src/avatar/catalog.js",
+        "src/player/lantern.js",
+        "src/ui/hud.js",
+        "src/ui/menus.js"
+      ]
+    },
+    {
+      "emoji": "🌪",
+      "count": 4,
+      "files": [
+        "src/avatar/catalog.js",
+        "src/player/lantern.js",
+        "src/systems/loot.js",
+        "src/world/atmosphere.js"
+      ]
+    },
+    {
+      "emoji": "🧢",
+      "count": 1,
+      "files": [
+        "src/avatar/catalog.js"
+      ]
+    },
+    {
+      "emoji": "🍄",
+      "count": 4,
+      "files": [
+        "src/avatar/catalog.js",
+        "src/systems/loot.js",
+        "src/ui/menus.js",
+        "src/world/biome.js"
+      ]
+    },
+    {
+      "emoji": "⛑",
+      "count": 1,
+      "files": [
+        "src/avatar/catalog.js"
+      ]
+    },
+    {
+      "emoji": "🧙",
+      "count": 1,
+      "files": [
+        "src/avatar/catalog.js"
+      ]
+    },
+    {
+      "emoji": "👑",
+      "count": 1,
+      "files": [
+        "src/avatar/catalog.js"
+      ]
+    },
+    {
+      "emoji": "👓",
+      "count": 1,
+      "files": [
+        "src/avatar/catalog.js"
+      ]
+    },
+    {
+      "emoji": "🕶",
+      "count": 1,
+      "files": [
+        "src/avatar/catalog.js"
+      ]
+    },
+    {
+      "emoji": "🩹",
+      "count": 2,
+      "files": [
+        "src/avatar/catalog.js"
+      ]
+    },
+    {
+      "emoji": "📡",
+      "count": 1,
+      "files": [
+        "src/avatar/catalog.js"
+      ]
+    },
+    {
+      "emoji": "🦋",
+      "count": 4,
+      "files": [
+        "src/avatar/catalog.js",
+        "src/world/biome.js",
+        "src/world/questland.js"
+      ]
+    },
+    {
+      "emoji": "🦸",
+      "count": 1,
+      "files": [
+        "src/avatar/catalog.js"
+      ]
+    },
+    {
+      "emoji": "🗡",
+      "count": 1,
+      "files": [
+        "src/avatar/catalog.js"
+      ]
+    },
+    {
+      "emoji": "👛",
+      "count": 1,
+      "files": [
+        "src/avatar/catalog.js"
+      ]
+    },
+    {
+      "emoji": "🔮",
+      "count": 4,
+      "files": [
+        "src/avatar/catalog.js",
+        "src/systems/loot.js",
+        "src/world/questland.js"
+      ]
+    },
+    {
+      "emoji": "✨",
+      "count": 12,
+      "files": [
+        "src/avatar/catalog.js",
+        "src/player/lantern.js",
+        "src/systems/loot.js",
+        "src/ui/avatar-studio.js",
+        "src/ui/hud.js",
+        "src/ui/menus.js",
+        "src/world/atmosphere.js",
+        "src/world/biome.js"
+      ]
+    },
+    {
+      "emoji": "🔵",
+      "count": 2,
+      "files": [
+        "src/avatar/catalog.js",
+        "src/systems/loot.js"
+      ]
+    },
+    {
+      "emoji": "🟣",
+      "count": 2,
+      "files": [
+        "src/avatar/catalog.js",
+        "src/systems/loot.js"
+      ]
+    },
+    {
+      "emoji": "🌟",
+      "count": 9,
+      "files": [
+        "src/avatar/catalog.js",
+        "src/systems/loot.js",
+        "src/ui/avatar-studio.js",
+        "src/world/biome.js",
+        "src/world/questland.js"
+      ]
+    },
+    {
+      "emoji": "🎨",
+      "count": 1,
+      "files": [
+        "src/main.js"
+      ]
+    },
+    {
+      "emoji": "🏅",
+      "count": 5,
+      "files": [
+        "src/main.js",
+        "src/systems/loot.js",
+        "src/systems/npc.js",
+        "src/ui/menus.js"
+      ]
+    },
+    {
+      "emoji": "🔷",
+      "count": 6,
+      "files": [
+        "src/main.js",
+        "src/systems/loot.js",
+        "src/ui/menus.js"
+      ]
+    },
+    {
+      "emoji": "👁",
+      "count": 3,
+      "files": [
+        "src/main.js",
+        "src/player/lantern.js",
+        "src/systems/interactables.js"
+      ]
+    },
+    {
+      "emoji": "🚶",
+      "count": 1,
+      "files": [
+        "src/main.js"
+      ]
+    },
+    {
+      "emoji": "🪝",
+      "count": 1,
+      "files": [
+        "src/main.js"
+      ]
+    },
+    {
+      "emoji": "⚠",
+      "count": 2,
+      "files": [
+        "src/main.js",
+        "src/systems/miniboss.js"
+      ]
+    },
+    {
+      "emoji": "🔭",
+      "count": 1,
+      "files": [
+        "src/player/lantern.js"
+      ]
+    },
+    {
+      "emoji": "🔋",
+      "count": 1,
+      "files": [
+        "src/player/lantern.js"
+      ]
+    },
+    {
+      "emoji": "❤",
+      "count": 3,
+      "files": [
+        "src/player/lantern.js",
+        "src/systems/loot.js",
+        "src/ui/menus.js"
+      ]
+    },
+    {
+      "emoji": "🤹",
+      "count": 2,
+      "files": [
+        "src/player/lantern.js",
+        "src/systems/loot.js"
+      ]
+    },
+    {
+      "emoji": "🪐",
+      "count": 1,
+      "files": [
+        "src/player/lantern.js"
+      ]
+    },
+    {
+      "emoji": "✍",
+      "count": 1,
+      "files": [
+        "src/player/lantern.js"
+      ]
+    },
+    {
+      "emoji": "🎈",
+      "count": 2,
+      "files": [
+        "src/player/lantern.js",
+        "src/systems/loot.js"
+      ]
+    },
+    {
+      "emoji": "🔒",
+      "count": 9,
+      "files": [
+        "src/player/lantern.js",
+        "src/systems/interactables.js",
+        "src/systems/npc.js",
+        "src/ui/avatar-studio.js",
+        "src/ui/hud.js",
+        "src/ui/menus.js",
+        "src/world/questland.js"
+      ]
+    },
+    {
+      "emoji": "🎁",
+      "count": 2,
+      "files": [
+        "src/systems/interactables.js",
+        "src/world/biome.js"
+      ]
+    },
+    {
+      "emoji": "🧱",
+      "count": 1,
+      "files": [
+        "src/systems/interactables.js"
+      ]
+    },
+    {
+      "emoji": "🚪",
+      "count": 1,
+      "files": [
+        "src/systems/interactables.js"
+      ]
+    },
+    {
+      "emoji": "🌸",
+      "count": 2,
+      "files": [
+        "src/systems/interactables.js",
+        "src/world/biome.js"
+      ]
+    },
+    {
+      "emoji": "🪄",
+      "count": 1,
+      "files": [
+        "src/systems/loot.js"
+      ]
+    },
+    {
+      "emoji": "💎",
+      "count": 4,
+      "files": [
+        "src/systems/loot.js",
+        "src/ui/menus.js",
+        "src/world/biome.js"
+      ]
+    },
+    {
+      "emoji": "🎗",
+      "count": 1,
+      "files": [
+        "src/systems/loot.js"
+      ]
+    },
+    {
+      "emoji": "📿",
+      "count": 1,
+      "files": [
+        "src/systems/loot.js"
+      ]
+    },
+    {
+      "emoji": "🜲",
+      "count": 1,
+      "files": [
+        "src/systems/loot.js"
+      ]
+    },
+    {
+      "emoji": "🜁",
+      "count": 4,
+      "files": [
+        "src/systems/loot.js",
+        "src/ui/menus.js",
+        "src/world/biome.js",
+        "src/world/questland.js"
+      ]
+    },
+    {
+      "emoji": "💠",
+      "count": 1,
+      "files": [
+        "src/systems/loot.js"
+      ]
+    },
+    {
+      "emoji": "🗝",
+      "count": 2,
+      "files": [
+        "src/systems/loot.js",
+        "src/world/biome.js"
+      ]
+    },
+    {
+      "emoji": "🟢",
+      "count": 1,
+      "files": [
+        "src/systems/loot.js"
+      ]
+    },
+    {
+      "emoji": "➡",
+      "count": 2,
+      "files": [
+        "src/systems/npc.js"
+      ]
+    },
+    {
+      "emoji": "💬",
+      "count": 2,
+      "files": [
+        "src/systems/npc.js",
+        "src/world/biome.js"
+      ]
+    },
+    {
+      "emoji": "👕",
+      "count": 1,
+      "files": [
+        "src/ui/avatar-studio.js"
+      ]
+    },
+    {
+      "emoji": "📚",
+      "count": 1,
+      "files": [
+        "src/ui/avatar-studio.js"
+      ]
+    },
+    {
+      "emoji": "🌲",
+      "count": 2,
+      "files": [
+        "src/ui/menus.js",
+        "src/world/biome.js"
+      ]
+    },
+    {
+      "emoji": "🏜",
+      "count": 2,
+      "files": [
+        "src/ui/menus.js",
+        "src/world/biome.js"
+      ]
+    },
+    {
+      "emoji": "❄",
+      "count": 3,
+      "files": [
+        "src/ui/menus.js",
+        "src/world/atmosphere.js",
+        "src/world/biome.js"
+      ]
+    },
+    {
+      "emoji": "🏛",
+      "count": 3,
+      "files": [
+        "src/ui/menus.js",
+        "src/world/biome.js"
+      ]
+    },
+    {
+      "emoji": "🌑",
+      "count": 3,
+      "files": [
+        "src/ui/menus.js",
+        "src/world/biome.js"
+      ]
+    },
+    {
+      "emoji": "✔",
+      "count": 1,
+      "files": [
+        "src/ui/menus.js"
+      ]
+    },
+    {
+      "emoji": "🌧",
+      "count": 1,
+      "files": [
+        "src/world/atmosphere.js"
+      ]
+    },
+    {
+      "emoji": "☀",
+      "count": 1,
+      "files": [
+        "src/world/atmosphere.js"
+      ]
+    },
+    {
+      "emoji": "🔧",
+      "count": 1,
+      "files": [
+        "src/world/biome.js"
+      ]
+    },
+    {
+      "emoji": "🌈",
+      "count": 2,
+      "files": [
+        "src/world/biome.js"
+      ]
+    },
+    {
+      "emoji": "🌫",
+      "count": 1,
+      "files": [
+        "src/world/biome.js"
+      ]
+    },
+    {
+      "emoji": "📦",
+      "count": 1,
+      "files": [
+        "src/world/biome.js"
+      ]
+    },
+    {
+      "emoji": "❓",
+      "count": 1,
+      "files": [
+        "src/world/biome.js"
+      ]
+    },
+    {
+      "emoji": "🌌",
+      "count": 5,
+      "files": [
+        "src/world/biome.js",
+        "src/world/questland.js"
+      ]
+    },
+    {
+      "emoji": "🌠",
+      "count": 3,
+      "files": [
+        "src/world/biome.js",
+        "src/world/questland.js"
+      ]
+    },
+    {
+      "emoji": "🜂",
+      "count": 1,
+      "files": [
+        "src/world/questland.js"
+      ]
+    }
+  ]
+}
