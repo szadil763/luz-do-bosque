@@ -39,6 +39,15 @@ export class Effects {
     this.group = new THREE.Group();
     this.group.name = 'effects';
     scene.add(this.group);
+    // Luzes de flash fixas e reaproveitadas: criar/remover PointLight a cada impacto
+    // muda a quantidade de luzes da cena e obriga o navegador a recompilar os shaders
+    // de todos os materiais, causando travadas no meio do combate.
+    this.flashLights = [0, 1].map(() => {
+      const light = new THREE.PointLight(new THREE.Color('#ffffff'), 0, 9);
+      light.userData.free = true;
+      this.group.add(light);
+      return light;
+    });
   }
 
   get intensity() { return this.settings.get('fx'); }
@@ -188,9 +197,18 @@ export class Effects {
 
   /** Faíscas de impacto simples com flash de luz temporário. */
   flash(position, color = '#ffffff', intensity = 3, distance = 9) {
-    const light = new THREE.PointLight(new THREE.Color(color), intensity, distance);
+    let light = this.flashLights.find((l) => l.userData.free);
+    if (!light) {
+      // todas ocupadas: reaproveita a mais antiga
+      const idx = this.rings.findIndex((r) => r.isLight);
+      light = this.rings[idx].mesh;
+      this.rings.splice(idx, 1);
+    }
+    light.userData.free = false;
+    light.color.set(color);
+    light.distance = distance;
+    light.intensity = intensity;
     light.position.copy(position);
-    this.group.add(light);
     this.rings.push({ mesh: light, t: 0, life: 0.18, from: intensity, to: 0, isLight: true });
   }
 
@@ -235,8 +253,8 @@ export class Effects {
         r.mesh.material.opacity = (1 - k) * 0.85 * Math.min(1, this.intensity + 0.2);
       }
       if (k >= 1) {
-        this.group.remove(r.mesh);
-        if (!r.isLight) { r.mesh.geometry?.dispose?.(); r.mesh.material?.dispose?.(); }
+        if (r.isLight) { r.mesh.intensity = 0; r.mesh.userData.free = true; }
+        else { this.group.remove(r.mesh); r.mesh.geometry?.dispose?.(); r.mesh.material?.dispose?.(); }
         this.rings.splice(i, 1);
       }
     }

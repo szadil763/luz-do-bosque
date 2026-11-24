@@ -29,6 +29,7 @@ const MOUSE_SHORT = { 0: 'M1', 1: 'M3', 2: 'M2', 3: 'M4' };
 export const DEFAULTS = {
   brightness: 1,       // brilho geral da cena
   fx: 1,               // intensidade dos efeitos/partículas
+  quality: 'auto',     // auto | alta | media | baixa (qualidade gráfica)
   music: 0.55,
   sfx: 0.8,
   ambient: 0.5,

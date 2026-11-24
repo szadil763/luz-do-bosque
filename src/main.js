@@ -13,6 +13,7 @@ import { Effects } from './world/effects.js';
 import { World } from './world/biome.js';
 import { Atmosphere } from './world/atmosphere.js';
 import { PostFX } from './world/postfx.js';
+import { QualityManager } from './core/quality.js';
 import { Player } from './player/player.js';
 import { Lantern } from './player/lantern.js';
 import { Combat } from './systems/combat.js';
@@ -59,6 +60,8 @@ class Game {
       await this.step(text, i / steps.length);
       fn();
     }
+    this.quality = new QualityManager(this);
+    this.quality.setMode(this.settings.get('quality'));
     await this.step('Pronto para explorar!', 1);
     this.ready = true;
     this.fsm.set('title');
@@ -76,7 +79,7 @@ class Game {
 
   setupRenderer() {
     this.renderer = new THREE.WebGLRenderer({ canvas: this.canvas, antialias: false, powerPreference: 'high-performance' });
-    this.renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 1.8));
+    this.renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 1)); // o QualityManager ajusta depois
     this.renderer.setSize(window.innerWidth, window.innerHeight);
     this.renderer.outputColorSpace = THREE.SRGBColorSpace;
     this.renderer.toneMapping = THREE.ACESFilmicToneMapping;
@@ -195,7 +198,11 @@ class Game {
     e.on('game:upgrade', ({ id }) => this.buyUpgrade(id));
     e.on('game:skin', ({ skin }) => { this.lantern.applySkin(skin); this.hud.toast('Nova aparência da lanterna!', '🎨'); });
     e.on('ui:pause-request', () => { if (this.fsm.is('playing')) this.fsm.set('paused'); });
-    e.on('settings:change', () => this.applySettings());
+    e.on('settings:change', (data) => {
+      this.applySettings();
+      const key = data?.key;
+      if (this.quality && (key === 'quality' || key === '*')) this.quality.setMode(this.settings.get('quality'));
+    });
 
     // ---- troca de avatar
     e.on('ui:avatar-request', () => {
@@ -369,6 +376,7 @@ class Game {
   // ============================================================== render
   /** Desenha um quadro com o pipeline cinematográfico (bloom, raios, grading). */
   renderFrame(dt = 0) {
+    this.quality?.update();
     this.updatePostFX();
     if (this.postfx) this.postfx.render(dt);
     else this.renderer.render(this.scene, this.camera);
@@ -412,7 +420,7 @@ class Game {
       if (!o.isMesh) return;
       if (o.userData.noShadow || seen.has(o)) return;
       seen.add(o);
-      o.castShadow = o.name !== 'ground';
+      o.castShadow = o.name !== 'ground' && (!this.quality || this.quality.castsShadow(o));
       o.receiveShadow = true;
     });
   }
@@ -833,7 +841,8 @@ class Game {
   onResize() {
     this.camera.aspect = window.innerWidth / window.innerHeight;
     this.camera.updateProjectionMatrix();
-    this.renderer.setSize(window.innerWidth, window.innerHeight);
+    if (this.quality) this.quality.setRatio(this.quality.ratio);
+    else this.renderer.setSize(window.innerWidth, window.innerHeight);
     this.postfx?.setSize(window.innerWidth, window.innerHeight);
   }
 }

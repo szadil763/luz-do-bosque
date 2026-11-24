@@ -272,6 +272,20 @@ export class PostFX {
     this.setSize(window.innerWidth, window.innerHeight);
   }
 
+  /** Troca antisserrilhado/bloom em tempo real (gerenciador de qualidade). */
+  setQuality({ samples, bloomIterations, quality } = {}) {
+    if (quality) this.quality = quality;
+    if (bloomIterations !== undefined) this._bloomIterations = bloomIterations;
+    if (samples !== undefined) {
+      const next = this.hdr ? samples : 0;
+      if (next !== this.samples) {
+        this.samples = next;
+        this._w = 0; // força recriar os alvos de render
+        this.setSize(window.innerWidth, window.innerHeight);
+      }
+    }
+  }
+
   /** Ajusta exposição/estilo — chamado pelas opções e pelo ciclo do dia. */
   setLook({ exposure, saturation, vignette, grain, bloom, rays } = {}) {
     if (exposure !== undefined) this.exposure = exposure;

@@ -79,9 +79,14 @@ src/ui/avatar-studio.js   estúdio "Trocar avatar": prévia 3D, abas, raridades,
   objetos com `userData.noShadow = true` ficam de fora (céu, água, grama, cenário distante).
 - **Vento:** `graphics.grassWind` (grama) e `atmosphere.wind` (copas/arbustos) são atualizados no
   loop; materiais novos de vegetação precisam entrar em `world.windables` ou usar `grassWind`.
-- **Qualidade:** `PostFX` escolhe 'low' em GPUs de software, telas < 620 px ou ≤ 4 núcleos
-  (sem MSAA e com um passe de bloom). O preview da Base44 roda em SwiftShader: FPS ali não
-  representa o hardware real.
+- **Qualidade:** `src/core/quality.js` (`QualityManager`, em `game.quality`) controla resolução
+  (pixel ratio), MSAA do pós-processamento, passes de bloom, tamanho/tipo/frequência das sombras,
+  sombra de objetos minúsculos e densidade da grama/flores (`InstancedMesh.count`). Opção
+  `quality` nas configurações: `auto` (padrão; escolhe pelo aparelho e ajusta a resolução pelo FPS
+  medido) ou `alta`/`media`/`baixa`. Nada disso altera a jogabilidade. O preview da Base44 roda em
+  SwiftShader: FPS ali não representa o hardware real.
+- **Luzes de flash:** `Effects.flash` reaproveita 2 `PointLight` fixas. Não crie/remova luzes em
+  tempo real: mudar a quantidade de luzes recompila os shaders de todos os materiais (travadas).
 
 ## Detalhes não óbvios
 

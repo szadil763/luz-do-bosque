@@ -6,6 +6,7 @@ import { UPGRADES, TRICK_DEFS, BIOME_POWERS } from '../player/lantern.js';
 import { ITEMS } from '../systems/loot.js';
 import { BIOME_LIST } from '../world/biome.js';
 import { ACTIONS, ACTION_LABELS } from '../core/input.js';
+import { QUALITY_LABELS } from '../core/quality.js';
 
 const $ = (id) => document.getElementById(id);
 const TOUCH_LABELS = { auto: 'Automático', on: 'Sempre visível', off: 'Desligado' };
@@ -153,6 +154,11 @@ export class Menus {
       ${slider('brightness', 'Brilho da cena', 0.6, 1.6, 0.05, (v) => `${Math.round(v * 100)}%`)}
       ${slider('fx', 'Intensidade dos efeitos', 0, 1.5, 0.1, (v) => `${Math.round(v * 100)}%`)}
       ${slider('textScale', 'Tamanho do texto', 0.9, 1.4, 0.05, (v) => `${Math.round(v * 100)}%`)}
+      <h3>Desempenho</h3>
+      <p class="hint">Se o jogo estiver lento, escolha <b>Média</b> ou <b>Baixa</b>. Na <b>Automática</b> o jogo ajusta a resolução sozinho para ficar fluido.</p>
+      <div class="row">
+        ${Object.entries(QUALITY_LABELS).map(([id, label]) => `<button class="btn small ${s.get('quality') === id ? 'primary' : 'ghost'}" data-quality="${id}">${label}</button>`).join('')}
+      </div>
       <h3>Som</h3>
       ${slider('music', 'Música', 0, 1, 0.05, (v) => `${Math.round(v * 100)}%`)}
       ${slider('sfx', 'Efeitos sonoros', 0, 1, 0.05, (v) => `${Math.round(v * 100)}%`)}
@@ -209,6 +215,13 @@ export class Menus {
       btn.addEventListener('click', () => {
         const key = btn.dataset.toggle;
         this.settings.set(key, !this.settings.get(key));
+        this.audio?.sfx('ui');
+        this.renderSettings();
+      });
+    });
+    panel.querySelectorAll('[data-quality]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        this.settings.set('quality', btn.dataset.quality);
         this.audio?.sfx('ui');
         this.renderSettings();
       });
