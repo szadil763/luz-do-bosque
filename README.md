@@ -11,6 +11,8 @@ com o SHA-256 listado em [`docs/MANIFESTO_DE_ARQUIVOS.txt`](docs/MANIFESTO_DE_AR
 
 ## Como jogar
 
+**Jogue online:** <https://szadil763.github.io/luz-do-bosque/>
+
 O jogo é um site estático (HTML + módulos JavaScript + Three.js r160 incluído em `vendor/`).
 Não precisa de `npm install`, build nem banco de dados — só de um servidor HTTP local, porque
 módulos ES não funcionam abrindo o `index.html` direto (`file://`).
